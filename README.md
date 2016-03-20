@@ -1,1 +1,1 @@
-# Creative Without Borders #
+![Creative Without Borders](http://www.creativeswithoutborders.org/wp-content/uploads/2015/05/cwb_logo.png)
