@@ -1,0 +1,32 @@
+{
+  "name": "cwb-main-web-app",
+  "version": "0.1.0",
+  "homepage": "http://www.creativeswithoutborders.org/",
+  "authors": [
+    "Kiong <kiong90@gmail.com>"
+  ],
+  "description": "Creatives Without Borders is a nonprofit startup collective that connects designers, thinkers and doers with nonprofit associations in need of creative expertise. Our mission is to change the world by empowering nonprofits through creative projects.",
+  "main": "www/index.html",
+  "moduleType": [],
+  "keywords": [
+    "cwb",
+    "creative without borders"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-sanitize": "~1.4.7",
+    "angular-touch": "~1.4.7"
+  }
+}
