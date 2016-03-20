@@ -3,8 +3,8 @@
 
 	angular.module('Core', [
 			'ngSanitize',
-			'ngTouch',
 			'ngAnimate',
-			'ui.router'
+			'ui.router',
+			'pascalprecht.translate'
 		]);
 })();

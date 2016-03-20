@@ -5,9 +5,16 @@
             'Core',
             'Directives'
         ])
-        .config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+        .config(function(translationHelperProvider, $translateProvider, $stateProvider, $urlRouterProvider, $compileProvider) {
             $urlRouterProvider.otherwise('/');
             $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|file|blob|cdvfile|content):|data:image\//);
+
+            /* ==================================== Translation ==================================== */
+            var translationSvc = translationHelperProvider.$get();
+            
+            $translateProvider.translations('en', translationSvc.getTranslationType('en'));
+            $translateProvider.preferredLanguage('en');
+
         }).run(function(/* $state */$rootScope) {
         	$rootScope.$on('$stateChangeStart', function(evnt, toState, toParams, fromState, fromParams) {
 		        // If you want to stop the state change event, use:
