@@ -14,6 +14,7 @@
             
             $translateProvider.translations('en', translationSvc.getTranslationType('en'));
             $translateProvider.preferredLanguage('en');
+            /* ==================================== End: Translation ==================================== */
 
         }).run(function(/* $state */$rootScope) {
         	$rootScope.$on('$stateChangeStart', function(evnt, toState, toParams, fromState, fromParams) {
